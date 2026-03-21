@@ -1,2 +1,385 @@
-<html>
-    </html>
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Shanmugapriya | Portfolio Booklet</title>
+<!-- Tailwind CSS v3 CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts for Editorial Look -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&amp;family=Inter:wght@300;400;700&amp;family=Oswald:wght@700&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandYellow: '#FACC15',
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+            display: ['Oswald', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+<style data-purpose="editorial-layout">
+    body {
+      background-color: #f3f4f6;
+      font-family: 'Inter', sans-serif;
+      color: #000000;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Print/Booklet Container */
+    .booklet-page {
+      width: 100%;
+      max-width: 1000px;
+      min-height: 100vh;
+      margin: 0 auto;
+      background-color: #ffffff;
+      padding: 3rem;
+      position: relative;
+      box-shadow: 0 0 50px rgba(0,0,0,0.05);
+      border-left: 1px solid #eee;
+      border-right: 1px solid #eee;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    /* Typography Overrides */
+    .heading-huge {
+      font-family: 'Playfair Display', serif;
+      font-weight: 900;
+      line-height: 0.85;
+      text-transform: uppercase;
+    }
+
+    .subheading-italic {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-style: italic;
+    }
+
+    /* Decorative Elements */
+    .thick-border-y {
+      border-top: 4px solid black;
+      border-bottom: 4px solid black;
+    }
+
+    .thin-line {
+      height: 1px;
+      background-color: black;
+      width: 100%;
+    }
+
+    .yellow-block-shadow {
+      box-shadow: 10px 10px 0px #FACC15;
+    }
+
+    .black-block-shadow {
+      box-shadow: 10px 10px 0px #000000;
+    }
+
+    /* Page Transitions for Scroll */
+    section {
+      page-break-after: always;
+      margin-bottom: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      .booklet-page {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<!-- BEGIN: Page 1 - Cover Page -->
+<section class="booklet-page" id="cover">
+<div class="flex flex-col h-full">
+<!-- Top Branding -->
+<div class="mb-8">
+<h1 class="heading-huge text-[12vw] tracking-tighter text-center">PORTFOLIO</h1>
+<div class="border-y-[3px] border-black py-1 mt-2"></div>
+</div>
+<!-- Main Cover Content Grid -->
+<div class="flex-grow grid grid-cols-1 md:grid-cols-2 gap-0 border-[6px] border-black overflow-hidden">
+<!-- Image Container -->
+<div class="relative h-full min-h-[400px]">
+<img alt="Portrait" class="absolute inset-0 w-full h-full object-cover grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRgnTbEn1hBzlazSiug8ksl3DQK0ex6eySWPYyuWhPbdpc4BaphAldyg62F-P7eHlDDllIM6Ki8RnIlwJ1v44q2Qs9t-jl3p79OKmjg5BZ9TZh8MRTJEsT3VIPxhZmB_VRUmq553L798M4uy7owaYzgLUEimn2lRllxKCMpFSv7O6vf-tWy-myaIM7OHS5wENQoSNrjMHCVQGSQLYbfZIAnkCgNZp0kAxijAGmEvCR5K6xNmBtLmnkkeUKc1OEuXeJw2FxkqBm8xqY"/>
+</div>
+<!-- Text Content -->
+<div class="flex flex-col">
+<div class="bg-brandYellow p-8 flex-grow flex flex-col justify-center border-b-[6px] border-black">
+<!-- Refined font size and single word formatting -->
+<h2 class="font-display text-4xl leading-none mb-4 tracking-tight">SHANMUGAPRIYA</h2>
+<div class="w-16 h-2 bg-black mb-6"></div>
+<p class="subheading-italic text-3xl leading-tight">AI &amp; DATA ANALYTICS ENTHUSIAST</p>
+</div>
+<div class="bg-white p-8 flex flex-col justify-between h-auto">
+<div>
+<p class="font-bold text-xs tracking-widest uppercase mb-4">Capabilities</p>
+<ul class="space-y-2 font-display text-lg uppercase tracking-tight">
+<li>Machine Learning Architecture</li>
+<li>Predictive Modeling</li>
+<li>Statistical Analysis</li>
+<li>Data Visualization</li>
+</ul>
+</div>
+<div class="mt-12">
+<p class="text-[10px] leading-relaxed tracking-wider uppercase opacity-80">
+                Selected works and research publications focusing on the future of autonomous systems.
+              </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Info -->
+<div class="mt-8 flex justify-between items-end">
+<div class="flex gap-2">
+<span class="border-2 border-black px-4 py-1 font-bold text-xs">ISSUE 001</span>
+<span class="bg-black text-white px-4 py-1 font-bold text-xs">DIGITAL EXPERIENCE</span>
+</div>
+<div class="text-right">
+<p class="font-bold text-[10px] tracking-[0.2em] uppercase">Available for collaboration &amp; development</p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Page 1 - Cover Page -->
+<!-- BEGIN: Page 2 - About Me -->
+<section class="booklet-page" id="about">
+<div class="flex justify-between items-center mb-12">
+<span class="font-bold text-xs uppercase tracking-widest border-b-2 border-black">Portfolio 2024</span>
+<span class="font-bold text-xs uppercase tracking-widest">Issue No. 01</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+<!-- Left Column: Typography & Text -->
+<div class="md:col-span-8">
+<div class="relative inline-block mb-10">
+<h2 class="heading-huge text-8xl md:text-9xl leading-none relative z-10">ABOUT<br/>ME</h2>
+<div class="absolute bottom-4 left-0 w-full h-8 bg-brandYellow -z-10"></div>
+</div>
+<h3 class="subheading-italic text-4xl mb-12">Building intelligent systems for a modern world.</h3>
+<div class="border-l-2 border-black pl-8 space-y-6 text-lg leading-relaxed text-gray-800">
+<p>
+            I am passionate about building intelligent systems and solving real-world problems using programming and technology. I enjoy exploring AI, data analytics, and innovative solutions that create meaningful impact.
+          </p>
+<p>
+            My approach blends technical precision with a creative mindset, ensuring that every project not only functions flawlessly but also addresses human needs at its core.
+          </p>
+</div>
+</div>
+<!-- Right Column: Image & Focus -->
+<div class="md:col-span-4 flex flex-col gap-8">
+<div class="p-2 border border-gray-300 yellow-block-shadow rotate-2 hover:rotate-0 transition-transform duration-500">
+<img alt="About Me Portrait" class="w-full grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASoiRFyMBK9Ckjlg_qANW8i1-gOE7Er6BTR1spvQydlerbdX4rvLCqp9ptk_4VZxxkfaFKwTJ0jWDx5TVxXA0GXRfs86hEoFSRAhB_2sNNeNLLPvCIqs8REsiJPLaNgEUYgie2LuZnijbs1915lQ_KG_RGKgnmINM_Bbe29smAIrVWhFN8WiSQj_4H6bym-Vl1n1q1Vf7iyloROIRgcgogtiL0mwqnVcZIWOE-9Wnhtez6g_XfwIbfx_bQ22nO7Vdd0TBBg1v5yn35"/>
+</div>
+<div class="bg-black text-white p-6 black-block-shadow">
+<p class="text-[10px] uppercase tracking-widest mb-2 text-brandYellow font-bold">Primary Focus</p>
+<p class="text-2xl font-serif font-bold">Artificial Intelligence</p>
+</div>
+<div class="border-2 border-black p-6">
+<p class="text-[10px] uppercase tracking-widest mb-2 text-gray-500 font-bold">Core Expertise</p>
+<p class="text-2xl font-serif font-bold italic">Data Analytics</p>
+</div>
+</div>
+</div>
+<div class="mt-auto pt-20 border-t border-black flex justify-between items-end">
+<div>
+<h4 class="font-display text-3xl leading-none">SHANMUGAPRIYA</h4>
+<p class="text-[9px] tracking-[0.3em] uppercase mt-1">Professional Portfolio © 2024</p>
+</div>
+<div class="flex gap-1">
+<div class="w-4 h-4 bg-black"></div>
+<div class="w-4 h-4 bg-brandYellow"></div>
+<div class="w-4 h-4 border border-black"></div>
+</div>
+</div>
+</section>
+<!-- END: Page 2 - About Me -->
+<!-- BEGIN: Page 3 - Project 01 -->
+<section class="booklet-page" id="project-01">
+<div class="flex justify-between items-start mb-8">
+<div class="bg-brandYellow border-4 border-black p-6 black-block-shadow">
+<p class="font-display text-4xl leading-none">PROJECT</p>
+<p class="font-display text-6xl leading-none">01</p>
+</div>
+<p class="font-bold text-xs tracking-widest uppercase mt-4">Archive / Year 2024</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-16 flex-grow">
+<div class="md:col-span-6">
+<h2 class="heading-huge text-6xl mb-6">OWN ALEXA<br/>CREATION</h2>
+<p class="text-xl font-medium mb-10 leading-snug">
+          Built a voice assistant capable of executing commands like search, music playback, and system actions.
+        </p>
+<div class="bg-brandYellow p-8 relative">
+<div class="absolute left-0 top-0 w-2 h-full bg-black"></div>
+<h4 class="font-bold uppercase tracking-widest text-sm mb-4">Core Implementation</h4>
+<p class="text-sm leading-relaxed">
+            This architecture leverages Natural Language Processing and custom intent mapping to establish a seamless hands-free interface. By integrating speech-to-text synthesis with system-level automation, the assistant executes complex tasks through simple voice triggers.
+          </p>
+</div>
+</div>
+<div class="md:col-span-6">
+<div class="relative yellow-block-shadow border-4 border-black overflow-hidden group h-full">
+<img alt="Alexa Device" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNfFhW03RGndvxorNDfne1I03nqUkLHuOREPL2KZjtqGP1b4_y5zpf-34hpXqc7_4uKFQcKpreXwdgOsRjrMX5zJOabl0nR1E-GuGLy4EIZXsnk-jPbjCk7AFaQkMYCMAEyIEWISPCyqHltl0OzmgpMAMTsnfJ5SfOkOzObV7Kz3viN1LIv_vSCOzkYNPeEinLKNWa34oURS2TuMJs8t2dOdxoZ_ZH_lM1rpnqnR6hz3b0NJh0WF4AZZ4a__DZ2kcLYITlLDgWodRr"/>
+<div class="absolute bottom-4 left-4 bg-black text-white px-4 py-2 text-[10px] tracking-widest uppercase">
+            Voice Interface 1.0-A
+          </div>
+</div>
+</div>
+</div>
+<!-- Large bottom image removed from Project 01 -->
+<div class="pt-8 border-t-2 border-black">
+<div class="flex justify-between items-end">
+<div class="text-[10px] uppercase tracking-widest font-bold">Project Documentation 01 / AI Assistant</div>
+<div class="font-serif italic text-sm">System Interaction Module</div>
+</div>
+</div>
+</section>
+<!-- END: Page 3 - Project 01 -->
+<!-- BEGIN: Page 4 - Project 02 -->
+<section class="booklet-page" id="project-02">
+<div class="flex justify-between items-start mb-8">
+<div class="bg-brandYellow border-4 border-black p-6 black-block-shadow">
+<p class="font-display text-4xl leading-none">PROJECT</p>
+<p class="font-display text-6xl leading-none">02</p>
+</div>
+<p class="font-bold text-xs tracking-widest uppercase mt-4">Archive / Year 2025</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-16 flex-grow">
+<div class="md:col-span-6">
+<h2 class="heading-huge text-6xl mb-6">MINI BLOCKCHAIN IN JAVA</h2>
+<p class="text-xl font-medium mb-10 leading-snug">
+          Developed a blockchain system using hashing and block linking to ensure data integrity.
+        </p>
+<div class="bg-brandYellow p-8 relative">
+<div class="absolute left-0 top-0 w-2 h-full bg-black"></div>
+<h4 class="font-bold uppercase tracking-widest text-sm mb-4">Core Implementation</h4>
+<p class="text-sm leading-relaxed">
+            This architecture leverages the SHA-256 algorithm for cryptographic security, establishing a sequential chain where every block validates its predecessor, making unauthorized data manipulation computationally prohibitive.
+          </p>
+</div>
+</div>
+<div class="md:col-span-6">
+<div class="relative yellow-block-shadow border-4 border-black overflow-hidden h-full">
+<img alt="Blockchain Architecture" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBrbMte4ZbG7rZ_nFA-_MGZM3OmG0FyY71r-P4gxd80vdZ-xAZ87uGvWa3uATYXgKaIg2KIzgj4rLSySQ_Jcv8ZZc3YF7RxfpjuEjLXnR8wDcNVgJBchhdL7JSxflDiFK75PXlB9fytLHlBxQ7L3f83vNByt9CwLEKC8ajVzE6GQ6MeiF5F6nEAz8qYvo9Na97dug-nQ-ZU7vu94e8BbUTR8zryZ0Akw3JV_LkRsDaaYzGVSnLu61lwsF6MUGYuMBAUzxW2SkPxM-P"/>
+<div class="absolute bottom-4 left-4 bg-black text-white px-4 py-2 text-[10px] tracking-widest uppercase">
+            System Architecture 0.2-B
+          </div>
+</div>
+</div>
+</div>
+<!-- Large bottom image removed from Project 02 -->
+<div class="pt-8 border-t-2 border-black">
+<div class="flex justify-between items-end">
+<div class="text-[10px] uppercase tracking-widest font-bold">Project Documentation 02 / Cryptography</div>
+<div class="font-serif italic text-sm">Security &amp; Integrity Protocols</div>
+</div>
+</div>
+</section>
+<!-- END: Page 4 - Project 02 -->
+<!-- BEGIN: Page 5 - Skills -->
+<section class="booklet-page" id="skills">
+<div class="flex justify-between items-center mb-16">
+<p class="font-bold text-xs uppercase tracking-widest">Shanmugapriya</p>
+<p class="font-bold text-xs uppercase tracking-widest">Portfolio 2024</p>
+</div>
+<!-- TECHNICAL EXPERTISE heading in smaller balanced size -->
+<h2 class="heading-huge text-6xl md:text-7xl mb-8 leading-none italic">TECHNICAL<br/>EXPERTISE</h2>
+<p class="max-w-2xl text-xl font-medium mb-20 leading-snug">
+      A comprehensive overview of programming proficiency, core engineering foundations, and specialized domains within computer science.
+    </p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+<!-- Programming Column -->
+<div>
+<div class="bg-brandYellow px-4 py-2 mb-8">
+<h4 class="font-display text-xl uppercase tracking-tighter">Programming</h4>
+</div>
+<ul class="space-y-4 font-serif text-2xl">
+<li>C</li>
+<li>C++</li>
+<li>Python</li>
+</ul>
+</div>
+<!-- Core Concepts Column -->
+<div>
+<div class="bg-brandYellow px-4 py-2 mb-8">
+<h4 class="font-display text-xl uppercase tracking-tighter">Core Concepts</h4>
+</div>
+<ul class="space-y-4 font-serif text-2xl leading-tight">
+<li>Data Structures &amp; Algorithms</li>
+<li>Object-Oriented Programming (OOP)</li>
+<li>Database Management Systems (DBMS)</li>
+<li>Problem Solving</li>
+</ul>
+</div>
+<!-- Areas of Interest Column -->
+<div>
+<div class="bg-brandYellow px-4 py-2 mb-8">
+<h4 class="font-display text-xl uppercase tracking-tighter">Areas of Interest</h4>
+</div>
+<ul class="space-y-4 font-serif text-2xl">
+<li>Artificial Intelligence</li>
+<li>Data Analytics</li>
+<li>Cybersecurity</li>
+</ul>
+</div>
+</div>
+<div class="mt-auto pt-12 border-t border-black flex flex-wrap justify-between gap-8">
+<div>
+<p class="font-bold text-[10px] uppercase tracking-widest text-gray-400 mb-1">Contact</p>
+<p class="font-medium">shanmugapriya@example.com</p>
+</div>
+<div>
+<p class="font-bold text-[10px] uppercase tracking-widest text-gray-400 mb-1">Location</p>
+<p class="font-medium">Engineering Hub, IN</p>
+</div>
+<div class="flex gap-4">
+<a class="font-bold underline decoration-brandYellow decoration-4 underline-offset-4" href="#">LINKEDIN</a>
+<a class="font-bold underline decoration-brandYellow decoration-4 underline-offset-4" href="#">GITHUB</a>
+</div>
+</div>
+</section>
+<!-- END: Page 5 - Skills -->
+<!-- BEGIN: Page 6 - Contact -->
+<section class="booklet-page" id="contact">
+<div class="flex-grow flex flex-col items-center justify-center relative overflow-hidden">
+<!-- Decorative background accent -->
+<div class="absolute -top-20 -right-20 w-[40vw] h-[40vw] bg-brandYellow rotate-12 -z-10"></div>
+<div class="text-center mb-12">
+<div class="w-24 h-2 bg-brandYellow mx-auto mb-6"></div>
+<h2 class="heading-huge text-9xl">CONTACT</h2>
+</div>
+<p class="subheading-italic text-2xl text-center max-w-lg mb-16 text-gray-600">
+        Let’s create something impactful. Reach out for collaborations or inquiries.
+      </p>
+<div class="border-[4px] border-black p-1 black-block-shadow bg-white">
+<div class="border-2 border-brandYellow px-12 py-8 bg-white">
+<h3 class="font-display text-4xl md:text-5xl tracking-tighter">shanu272007@gmail.com</h3>
+</div>
+</div>
+</div>
+<div class="w-full border-t border-black my-12"></div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-end">
+<div>
+<p class="text-[10px] uppercase tracking-[0.3em] font-bold text-gray-400 mb-4">Socials</p>
+<div class="space-y-2 flex flex-col items-start">
+<a class="font-bold hover:text-brandYellow transition-colors" href="https://www.linkedin.com/in/shanmugapriya-s-a77942375/">LinkedIn: Shanmugapriya subramanian</a>
+<a class="font-bold hover:text-brandYellow transition-colors" href="https://github.com/shanu272007-commits">GitHub: shanu272007-commits</a>
+</div>
+</div>
+<div class="text-right">
+<h4 class="font-display text-4xl leading-none">SHANMUGAPRIYA</h4>
+<p class="text-[10px] uppercase tracking-[0.2em] mt-2">© 2026 Portfolio</p>
+</div>
+</div>
+<div class="h-2 bg-brandYellow mt-8 w-full"></div>
+</section>
+<!-- END: Page 6 - Contact -->
+</body></html>
